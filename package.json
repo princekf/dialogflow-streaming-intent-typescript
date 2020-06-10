@@ -1,0 +1,32 @@
+{
+  "name": "test-dialog-flow",
+  "version": "1.0.0",
+  "description": "Simple application using dialogflow",
+  "main": "index.js",
+  "author": "Prince Francis",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/dialogflow": "2.0.0",
+    "@types/uuid": "8.0.0",
+    "node-record-lpcm16": "1.0.1",
+    "speaker": "0.5.1",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "13.13.4",
+    "@types/webpack-node-externals": "^1.7.1",
+    "nodemon-webpack-plugin": "4.3.1",
+    "ts-loader": "7.0.2",
+    "ts-node": "8.9.1",
+    "typescript": "3.8.3",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.11",
+    "webpack-node-externals": "1.7.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./lib/app.ts",
+    "start": "nodemon ./dist/app.js",
+    "prod": "npm run build && npm run start"
+  }
+}
